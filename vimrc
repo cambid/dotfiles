@@ -24,69 +24,65 @@ Bundle "ntpeters/vim-airline-colornum"
 
 filetype on
 
-" setzt den hintergrund auf dunkel
+" dark background
 set bg=dark
 
 " define color
 colorscheme wombat256mod
 
-" schaltet syntaxhervorherbung ein
+" activate systax highlight
 syntax on
 
-" schaltet zeilennummern ein
+" show linenumbers
 set relativenumber
 set number
 
-" schaltet aenderungsanzeige mit $ ein
+" show linechanges with $
 set cpoptions=$
 
-" zeigt teilbefehle rechts unten an
+" show commands in the lower right corner
 set showcmd
 
-" zeigt suchbegriffe nur waehrend der suche an
+" show searchterms only on search
 set nohlsearch
 
-" schaltet inkrementielle suche ein
+" show matches while searching
 set incsearch
 
-" Automatisches Einruecken beim Tippen
+" activate filetype plugin and indentation
 filetype plugin indent on
 
-" kompilieren und anzeigen von latex-dokumenten auf F8 mappen (habe in jedem
-" latex-verzeichnis mein Makefile)
+" compile latex documents
 map <F8> :w!<CR> :!make show<CR><CR>
 
-" Mail for mutt
+" set type to mail for mutt-tmp-files
 au BufNewFile,BufRead mutt-*-\w\+,mutt\w\{6\},ae\d setf mail
 
-" Konfiguriert und aktiviert Statuszeile
+" always show status line
 set laststatus=2
 
-" schaltet das wildmenu ein
+" show matches in menu
 set wildmenu
 
-" damit kann man den buffer wechseln ohne ihn abzuspeichern
-set hid
-
-" Anzeige von Sonderzeichen konfigurieren und aktivieren
+" show special chars
 set listchars=tab:>-,trail:_,extends:>,precedes:<
 set list
 
-" kuerzt Nachrichten auf einen 'press a key' Prompt herunter und unterdrueckt
-" die startup-Nachricht
+" no startup message and shorten some messages
 set shortmess=atI
 
-" Rechtschreibpruefung konfigurieren
+" use de and en for spellchecking
 set spelllang=de_de,en_us
 set spellfile=$HOME/.vim/de.add
 
-" Rechtschreibpruefung in Mail aktivieren
+" check spelling in mails
 autocmd FileType mail set spell
 
+" set commandline to two lines height
 set cmdheight=2
 
-" Einstellungen fuer Tabs
-" Tabstops sind zwei Leerzeichen breit
+" settings for tabs
+" tabs are two spaces width
 set tabstop=2
 " number of space chars inserted for indentation
 set shiftwidth=2
@@ -95,17 +91,18 @@ set expandtab
 
 " makes the tab-spaces feel like real tabs
 set softtabstop=2
-" keine Ersetzung von Tabs in Makefiles
+" don't replace tabs in Makefiles
 au FileType make setlocal noexpandtab
 
-" Einstellungen fuer Python
+" special settings for python-files
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 commentstring=#\ %s
 let python_highlight_all=1
 
-" An welchen Zeichen is ein Umbruch erlaubt
-set brk=\ \ !@*-+_;:,./?
+" allow breaks at special chars and indent breaklines
+set breakat="\ \ !@*-+_;:,./?"
+set breakindent
 
-" Maussupport deaktivieren
+" deactivate mouse
 set mouse=
 
 " don't cache gpg-passwords with gpg-agent
