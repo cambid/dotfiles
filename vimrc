@@ -24,6 +24,10 @@ Bundle "ntpeters/vim-airline-colornum"
 
 filetype on
 
+" automatic reloading of vimrc
+autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost vimrc source %
+
 " dark background
 set bg=dark
 
