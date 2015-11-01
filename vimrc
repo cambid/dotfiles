@@ -4,6 +4,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle "gmarik/vundle"
 
+" change the mapleader from \ to ,
+let mapleader=","
+
 " load plugins
 Bundle "bling/vim-airline"
 Bundle "ervandew/supertab"
@@ -21,6 +24,7 @@ Bundle "kana/vim-textobj-user"
 Bundle "glts/vim-textobj-comment"
 Bundle "kien/ctrlp.vim"
 Bundle "ntpeters/vim-airline-colornum"
+Bundle "klen/python-mode"
 
 filetype on
 
@@ -30,6 +34,9 @@ autocmd! bufwritepost vimrc source %
 
 " dark background
 set bg=dark
+
+" change title of terminal
+set title
 
 " define color
 colorscheme wombat256mod
@@ -114,6 +121,9 @@ let g:GPGUseAgent=0
 
 " ignorecase on search
 set ignorecase
+
+" disable all folds
+set nofoldenable
 
 " disable arrowkeys in all modes
 noremap <Up> <NOP>
