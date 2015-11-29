@@ -143,6 +143,9 @@ noremap S :%s//g<LEFT><LEFT>
 " show buffers in headline
 let g:airline#extensions#tabline#enabled = 1
 
+" new buffer
+nmap <leader>T :enew<CR>
+
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
 
