@@ -134,3 +134,7 @@ inoremap <Up> <NOP>
 inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
+
+" allow simple search and replace
+noremap s :s//g<LEFT><LEFT>
+noremap S :%s//g<LEFT><LEFT>
