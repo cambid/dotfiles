@@ -25,6 +25,7 @@ Bundle "glts/vim-textobj-comment"
 Bundle "kien/ctrlp.vim"
 Bundle "ntpeters/vim-airline-colornum"
 Bundle "klen/python-mode"
+Bundle "airblade/vim-gitgutter"
 
 filetype on
 
