@@ -139,3 +139,19 @@ inoremap <Right> <NOP>
 " allow simple search and replace
 noremap s :s//g<LEFT><LEFT>
 noremap S :%s//g<LEFT><LEFT>
+
+" show buffers in headline
+let g:airline#extensions#tabline#enabled = 1
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" allow buffers to be hidden
+set hidden
