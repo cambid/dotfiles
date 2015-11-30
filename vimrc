@@ -26,6 +26,7 @@ Bundle "kien/ctrlp.vim"
 Bundle "ntpeters/vim-airline-colornum"
 Bundle "klen/python-mode"
 Bundle "airblade/vim-gitgutter"
+Bundle "jamessan/vim-gnupg"
 
 filetype on
 
