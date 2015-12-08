@@ -56,8 +56,11 @@ set cpoptions=$
 " show commands in the lower right corner
 set showcmd
 
-" show searchterms only on search
-set nohlsearch
+" show searchterms always after search
+set hlsearch
+
+" No highlight after a search
+nnoremap <leader><space> :noh<cr>
 
 " show matches while searching
 set incsearch
@@ -159,3 +162,9 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " allow buffers to be hidden
 set hidden
+
+" switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" Yank from the cursor to the end of the line, to be consistent with C and D.
+nnoremap Y y$
