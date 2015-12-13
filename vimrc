@@ -95,7 +95,7 @@ set spellfile=$HOME/.vim/de.add
 autocmd FileType mail set spell
 
 " set commandline to two lines height
-set cmdheight=2
+set cmdheight=1
 
 " settings for tabs
 " tabs are two spaces width
