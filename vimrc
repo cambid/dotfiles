@@ -168,3 +168,11 @@ nnoremap <leader><leader> <c-^>
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
+
+" add shortcuts for fugitive commands
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gp :Git push<CR>
