@@ -27,6 +27,8 @@ Bundle "ntpeters/vim-airline-colornum"
 Bundle "klen/python-mode"
 Bundle "airblade/vim-gitgutter"
 Bundle "jamessan/vim-gnupg"
+Bundle "tpope/vim-repeat"
+Bundle "evannook/matchit"
 
 filetype on
 
