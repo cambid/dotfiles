@@ -28,7 +28,9 @@ Bundle "klen/python-mode"
 Bundle "airblade/vim-gitgutter"
 Bundle "jamessan/vim-gnupg"
 Bundle "tpope/vim-repeat"
+Bundle "sjl/gundo.vim"
 Bundle "evannook/matchit"
+Bundle "scrooloose/nerdtree"
 
 filetype on
 
@@ -178,3 +180,13 @@ nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gp :Git push<CR>
+
+" persist (g)undo tree between sessions
+set undodir=~/.vim/tmp/undo/
+set undofile
+set history=100
+set undolevels=100
+
+" toggles without fn-keys
+nnoremap <leader>1 :GundoToggle<CR>
+nnoremap <leader>2 :NERDTreeToggle<CR>
