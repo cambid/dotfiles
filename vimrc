@@ -164,6 +164,12 @@ nmap <leader>h :bprevious<CR>
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
 
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
+
+" don't show mode in statusline
+set noshowmode
+
 " allow buffers to be hidden
 set hidden
 
