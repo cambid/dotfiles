@@ -33,7 +33,7 @@ Bundle "tpope/vim-unimpaired"
 Bundle "reedes/vim-textobj-sentence"
 Bundle "kana/vim-textobj-user"
 Bundle "glts/vim-textobj-comment"
-Bundle "kien/ctrlp.vim"
+Bundle "ctrlp/ctrlp.vim"
 Bundle "ntpeters/vim-airline-colornum"
 Bundle "klen/python-mode"
 Bundle "airblade/vim-gitgutter"
@@ -56,7 +56,7 @@ set bg=dark
 set title
 
 " define color
-colorscheme wombat256mod
+colorscheme skittles_berry
 
 " activate systax highlight
 syntax on
