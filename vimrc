@@ -42,6 +42,7 @@ Bundle "tpope/vim-repeat"
 Bundle "sjl/gundo.vim"
 Bundle "evannook/matchit"
 Bundle "scrooloose/nerdtree"
+Bundle "jiangmiao/auto-pairs"
 
 filetype on
 
