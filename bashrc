@@ -1,5 +1,8 @@
 umask 022
 
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+      . /usr/share/bash-completion/bash_completion
+
 export LS_OPTIONS='--color=auto'
 eval `dircolors`
 alias ls='ls $LS_OPTIONS'
