@@ -4,7 +4,7 @@ umask 022
       . /usr/share/bash-completion/bash_completion
 
 export LS_OPTIONS='--color=auto'
-eval `dircolors`
+eval $(dircolors -b)
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias acroread='evince'
