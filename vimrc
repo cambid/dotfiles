@@ -78,6 +78,10 @@ set hlsearch
 " No highlight after a search
 nnoremap <leader><space> :noh<cr>
 
+" insert a blank line with <leader>o and <leader>O
+nnoremap <silent> <leader>o o<ESC>
+nnoremap <silent> <leader>O O<ESC>
+
 " show matches while searching
 set incsearch
 
