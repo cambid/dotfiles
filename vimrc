@@ -160,6 +160,10 @@ inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
 
+" Quickly get out of insert mode without your fingers having to leave the
+" home row (either use 'jj' or 'jk')
+inoremap jj <Esc>
+
 " allow simple search and replace
 noremap s :s//g<LEFT><LEFT>
 noremap S :%s//g<LEFT><LEFT>
