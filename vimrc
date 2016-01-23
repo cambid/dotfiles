@@ -44,6 +44,7 @@ Bundle "evannook/matchit"
 Bundle "scrooloose/nerdtree"
 Bundle "jiangmiao/auto-pairs"
 Bundle "AndrewRadev/splitjoin.vim"
+Bundle "Yggdroot/indentLine"
 
 filetype on
 
