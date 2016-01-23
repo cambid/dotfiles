@@ -43,6 +43,7 @@ Bundle "sjl/gundo.vim"
 Bundle "evannook/matchit"
 Bundle "scrooloose/nerdtree"
 Bundle "jiangmiao/auto-pairs"
+Bundle "AndrewRadev/splitjoin.vim"
 
 filetype on
 
