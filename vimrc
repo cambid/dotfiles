@@ -18,7 +18,11 @@ Bundle "gmarik/vundle"
 " change the mapleader from \ to ,
 let mapleader=","
 
+" set theme for airline
+let g:airline_theme = "wombat"
+
 " load plugins
+Bundle "vim-airline/vim-airline-themes"
 Bundle "bling/vim-airline"
 Bundle "ervandew/supertab"
 Bundle "flazz/vim-colorschemes"
