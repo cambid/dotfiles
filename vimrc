@@ -88,6 +88,9 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <silent> <leader>o o<ESC>
 nnoremap <silent> <leader>O O<ESC>
 
+" toggle paste-mode
+nnoremap <leader>p :set paste!<cr>
+
 " show matches while searching
 set incsearch
 
