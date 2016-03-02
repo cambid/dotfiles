@@ -49,6 +49,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'easymotion/vim-easymotion'
 
 filetype on
 
