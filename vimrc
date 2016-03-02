@@ -13,7 +13,7 @@ endif
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle "gmarik/vundle"
+Plugin 'gmarik/vundle'
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -22,33 +22,33 @@ let mapleader=","
 let g:airline_theme = "wombat"
 
 " load plugins
-Bundle "vim-airline/vim-airline-themes"
-Bundle "bling/vim-airline"
-Bundle 'Valloric/YouCompleteMe'
-Bundle "flazz/vim-colorschemes"
-Bundle "godlygeek/tabular"
-Bundle "regedarek/ZoomWin"
-Bundle "rodjek/vim-puppet"
-Bundle "scrooloose/syntastic"
-Bundle "tpope/vim-commentary"
-Bundle "tpope/vim-fugitive"
-Bundle "tpope/vim-surround"
-Bundle "tpope/vim-unimpaired"
-Bundle "reedes/vim-textobj-sentence"
-Bundle "kana/vim-textobj-user"
-Bundle "glts/vim-textobj-comment"
-Bundle "ctrlpvim/ctrlp.vim"
-Bundle "ntpeters/vim-airline-colornum"
-Bundle "klen/python-mode"
-Bundle "airblade/vim-gitgutter"
-Bundle "jamessan/vim-gnupg"
-Bundle "tpope/vim-repeat"
-Bundle "sjl/gundo.vim"
-Bundle "evannook/matchit"
-Bundle "scrooloose/nerdtree"
-Bundle "jiangmiao/auto-pairs"
-Bundle "AndrewRadev/splitjoin.vim"
-Bundle "Yggdroot/indentLine"
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'godlygeek/tabular'
+Plugin 'regedarek/ZoomWin'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'reedes/vim-textobj-sentence'
+Plugin 'kana/vim-textobj-user'
+Plugin 'glts/vim-textobj-comment'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ntpeters/vim-airline-colornum'
+Plugin 'klen/python-mode'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'jamessan/vim-gnupg'
+Plugin 'tpope/vim-repeat'
+Plugin 'sjl/gundo.vim'
+Plugin 'evannook/matchit'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'Yggdroot/indentLine'
 
 filetype on
 
