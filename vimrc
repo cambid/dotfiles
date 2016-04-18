@@ -24,7 +24,7 @@ let g:airline_theme = "wombat"
 " load plugins
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'godlygeek/tabular'
 Plugin 'regedarek/ZoomWin'
