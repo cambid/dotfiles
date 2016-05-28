@@ -50,6 +50,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'pearofducks/ansible-vim'
 
 filetype on
 
