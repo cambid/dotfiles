@@ -17,6 +17,8 @@ solaar &
 redshift &
 dbus-launch &
 pulseaudio --start
+synclient TouchpadOff=1
+xset mouse 3
 eval "$(ssh-agent)"
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 -F -f &
 screenkey -s small --bg-color "#696969"
