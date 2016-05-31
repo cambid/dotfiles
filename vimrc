@@ -161,7 +161,7 @@ set ignorecase
 " disable all folds
 set nofoldenable
 
-" disable arrowkeys in all modes
+" disable arrowkeys in all modets
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
