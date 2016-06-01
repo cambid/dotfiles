@@ -155,13 +155,14 @@ set mouse=
 " don't cache gpg-passwords with gpg-agent
 let g:GPGUseAgent=0
 
-" ignorecase on search
+" ignorecase on search except searching uppercase letters
 set ignorecase
+set smartcase
 
 " disable all folds
 set nofoldenable
 
-" disable arrowkeys in all modets
+" disable arrowkeys in all modes
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
