@@ -45,12 +45,12 @@ Plugin 'jamessan/vim-gnupg'
 Plugin 'tpope/vim-repeat'
 Plugin 'sjl/gundo.vim'
 Plugin 'evannook/matchit'
-Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'tpope/vim-vinegar'
 
 filetype on
 
@@ -225,6 +225,8 @@ set undofile
 set history=100
 set undolevels=100
 
+" toggle scrollbind
+nnoremap <silent> <leader>sb :windo set invscrollbind <CR>
+
 " toggles without fn-keys
 nnoremap <leader>1 :GundoToggle<CR>
-nnoremap <leader>2 :NERDTreeToggle<CR>
