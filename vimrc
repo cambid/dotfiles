@@ -211,6 +211,10 @@ nnoremap <leader><leader> <c-^>
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
+" open new splits below and on the right hand side
+set splitbelow
+set splitright
+
 " add shortcuts for fugitive commands
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gs :Gstatus<CR>
