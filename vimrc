@@ -65,7 +65,7 @@ set bg=dark
 set title
 
 " define color
-colorscheme skittles_berry
+colorscheme PaperColor
 
 " activate systax highlight
 syntax on
