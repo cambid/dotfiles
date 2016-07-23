@@ -1,8 +1,9 @@
 #!/bin/bash
+xrandr --dpi 220
+# personal colors and fonts
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 # personal keymap
 xmodmap ~/.xmodmaprc
-# personal colors and fonts
-xrdb -load ~/.Xdefaults
 # no energy-star
 xset -dpms
 # no bell
@@ -18,10 +19,11 @@ redshift &
 dbus-launch &
 pulseaudio --start
 synclient TouchpadOff=1
-xset mouse 3
+xinput disable $(xinput list | grep ALP00 | grep -o "id=[0-9]*" | cut -f 2 -d "=")
+xset mouse 5
 eval "$(ssh-agent)"
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 -F -f &
 screenkey -s small --bg-color "#696969"
 ssh-add
-# starting window-manager
-exec i3 --force-xinerama -V
+# starting window manager
+exec i3
