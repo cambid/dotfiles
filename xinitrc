@@ -18,6 +18,7 @@ solaar &
 redshift &
 dbus-launch &
 pulseaudio --start
+mpd
 synclient TouchpadOff=1
 xinput disable $(xinput list | grep ALP00 | grep -o "id=[0-9]*" | cut -f 2 -d "=")
 xset mouse 5
