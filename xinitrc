@@ -22,7 +22,6 @@ synclient TouchpadOff=1
 xinput disable $(xinput list | grep ALP00 | grep -o "id=[0-9]*" | cut -f 2 -d "=")
 xset mouse 5
 eval "$(ssh-agent)"
-xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 -F -f &
 screenkey -s small --bg-color "#696969"
 ssh-add
 # starting window manager
