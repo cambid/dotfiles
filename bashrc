@@ -18,6 +18,7 @@ alias bzvfr="ssh bzvfr"
 alias sophie="ssh sophie"
 alias jump="ssh jump"
 alias virt3="ssh virt3"
+alias spotify="spotify --force-device-scale-factor=2"
 
 PS1="\[\e[33;1m\][$(date +%H:%M)] \[\e[32;1m\]\u\[\e[37;1m\]@\[\e[31;1m\]\h:\[\e[0;1m\]\w > \[\e[0m\]"
 export PS1
