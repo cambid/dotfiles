@@ -48,6 +48,7 @@ export HISTSIZE=1000000
 export HISTFILESIZE=1000000
 shopt -s histappend
 shopt -s cmdhist
+shopt -s checkwinsize
 export HISTCONTROL=erasedups:ignoreboth
 PROMPT_COMMAND='history -a'
 
