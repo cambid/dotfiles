@@ -1,0 +1,26 @@
+! Fonts {{{
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.hintstyle: hintfull
+Xft.dpi:       220
+! }}}
+
+UXTerm*foreground:#51a366
+UXTerm*background:gray4
+UXTerm*cursorColor:red
+UXTerm*charClass:58:48,64:48,45-47:48,126:48
+UXTerm*boldMode:false
+UXTerm*font:-windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+UXTerm*boldFont:-windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+UXTerm*faceName:proggyclean
+UXTerm*faceSize:10
+XTerm*foreground:#51a366
+XTerm*background:gray4
+XTerm*cursorColor:red
+XTerm*charClass:58:48,64:48,45-47:48,126:48
+XTerm*boldMode:false
+XTerm*font:-windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+XTerm*boldFont:-windows-proggyclean-medium-r-normal--13-80-96-96-c-70-iso8859-1
+XTerm*faceName:proggyclean
+XTerm*faceSize:10
