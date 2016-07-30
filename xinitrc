@@ -1,9 +1,9 @@
 #!/bin/bash
 xrandr --dpi 220
 # personal colors and fonts
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources
 # personal keymap
-xmodmap ~/.xmodmaprc
+[[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
 # no energy-star
 xset -dpms
 # no bell
@@ -20,7 +20,7 @@ dbus-launch &
 pulseaudio --start
 mpd
 synclient TouchpadOff=1
-xinput disable $(xinput list | grep ALP00 | grep -o "id=[0-9]*" | cut -f 2 -d "=")
+xinput disable "$(xinput list | grep ALP00 | grep -o "id=[0-9]*" | cut -f 2 -d "=")"
 xset mouse 5
 eval "$(ssh-agent)"
 screenkey -s small --bg-color "#696969"
