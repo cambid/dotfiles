@@ -19,7 +19,7 @@ Plugin 'gmarik/vundle'
 let mapleader=","
 
 " set theme for airline
-let g:airline_theme = "wombat"
+let g:airline_theme = "jellybeans"
 
 " load plugins
 Plugin 'vim-airline/vim-airline-themes'
@@ -51,6 +51,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pearofducks/ansible-vim'
 Plugin 'tpope/vim-vinegar'
+Plugin 'hashivim/vim-vagrant'
 
 filetype on
 
