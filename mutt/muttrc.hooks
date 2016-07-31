@@ -1,0 +1,18 @@
+send-hook . \
+   "unmy_hdr From: ;\
+   set signature="~/.sig/sig-private-basel" \
+
+send-hook ^.*@lists\\.piratenpartei\\.de$ \
+   "my_hdr From: jan.fader@web.de ;\
+   set signature="~/.sig/sig-private-piraten"
+
+send-hook ^dreilaendereck@freifunk\\.net$ \
+   "my_hdr From: freifunk@faderweb.de ;\
+   set signature=
+
+send-hook ^.*@lists.piratenpartei\\.ch \
+   "my_hdr From: ppsde@faderweb.de ;\
+   set signature=
+
+send-hook '~f ^jan.fader@piratenpartei\\.ch$' \
+   set signature=~"/.sig/sig-piraten-basel"

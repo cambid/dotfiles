@@ -1,0 +1,6 @@
+# eigene Aliasdatei verwenden
+set alias_file=~/.aliasrc
+# Aliasdatei einlesen, damit die Adressen gleich bekannt sind
+source ~/.aliasrc
+# Namen zu Adressen über die Aliasliste suchen und anzeigen
+set reverse_alias

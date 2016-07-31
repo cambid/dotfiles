@@ -1,0 +1,93 @@
+# reset all # Alle Einstellungen zuruecksetzen
+ignore *
+
+source $HOME/.mutt/muttrc.headers
+source $HOME/.mutt/muttrc.t-prot
+source $HOME/.mutt/muttrc.color
+source $HOME/.mutt/muttrc.score
+source $HOME/.mutt/muttrc.hooks
+source $HOME/.mutt/muttrc.alternates
+source $HOME/.mutt/muttrc.gpg
+source $HOME/.mutt/muttrc.keys
+source $HOME/.mutt/muttrc.alias
+source $HOME/.mutt/muttrc.sidebar
+source $HOME/.mutt/muttrc.spam
+
+# Schaltet das Ignorieren der wichtigen Header aus
+unignore Date Subject From To CC BCC Resent-From X-Spam-Status User-Agent X-Mailer
+# Sortiert die Header immer gleich
+hdr_order Resent-From From To CC Subject BCC Date X-Spam-Status User-Agent X-Mailer
+folder-hook 'INBOX' set imap_headers="X-SPAM-STATUS"
+folder-hook 'SPAM' set imap_headers="X-SPAM-STATUS"
+
+# Schaltet Verschieben von gelesenen Mails aus
+set move=no
+# Markiert alte Nachrichten nicht als gelesen
+set nomark_old
+# Quoted-printable
+unset allow_8bit
+set attribution="Am %d, hat %n geschrieben:"
+set sort=threads
+
+# Threads nach Datum sortieren
+set sort_aux= date
+set status_format=" %r %b %f %n      Del %d      Msgs %m %l %> (%P)"
+
+# Lade das aktivierte Profil. Dieses wird ueber muttprofile abhaengig von der IP aktiviert
+source "gpg -d ~/.mutt/profile.active |"
+
+#set envelope_from=yes
+set mime_forward=no
+set forward_quote=yes
+set forward_edit=yes
+set use_envelope_from
+set use_from=yes
+#my_hdr Reply-To:"Jan Fader" <jan.fader@web.de>
+# Schaltet Abfrage des To-Feldes ab
+set fast_reply
+# Schaltet das Editieren von Kopfzeilen ein
+set edit_headers
+# Schaltet Abfrage nach Zitaten ab
+set include
+
+# Header-Cache
+set header_cache="$HOME/.mutt/cache"
+
+set editor='vim -c "set tw=75"'
+
+mailboxes +INBOX +INBOX.SPAM +INBOX.Mailinglisten +INBOX.Mailinglisten.dia-list +INBOX.Mailinglisten.centerIM +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux +INBOX.Mailinglisten.keynav +INBOX.Piratenpartei +INBOX.Piratenpartei.BB +INBOX.Piratenpartei.BB-discuss +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Piratenpartei.TechTalk +INBOX.Piratenpartei.CH-coordination +INBOX.Piratenpartei.CH-Newsletter
+
+set index_format="%4C %Z %4N     %d [%?H?%5H&     ?] {%3M} %-35.35F (%5c) %s "
+set date_format="!%a %d. %b. %Y"
+set to_chars=" +TCFL"
+
+# In allen Ordnern ausser dem SPAM-Ordner nach Faden sortieren. Im SPAM-Ordner nach spamwert und im VersendeteNachrichten-Ordner nach Datum sortieren
+folder-hook .       set sort="threads"
+folder-hook 'SPAM'  set sort="spam"
+folder-hook 'VersendeteNachrichten' set sort="date"
+
+# Im VersendeteNachrichten-Ordner nach To und Subject suchen
+folder-hook 'VersendeteNachrichten' "set simple_search=\"~t %s | ~s %s\""
+folder-hook ! 'VersendeteNachrichten' "set simple_search=\"~f %s | ~s %s\""
+
+# Smilies nicht als Quoting interpretieren
+set smileys="(>From )|(:[-^]?[][)(><}{|/DP])"
+
+# Dreiteilige Ansicht im Browser
+set pager_index_lines = 13
+
+# use ASCII instead of ACS chars for threads
+set ascii_chars
+
+# Title des X-Term konfigurieren #JFE
+set xterm_set_titles=yes
+set xterm_title="--[%f]--[%n/%m]---(Sortiert nach %s/%S)%>-"
+
+# Tilde am Ende der Nachricht
+set tilde
+
+# Saubere Umbrueche
+set smart_wrap
+set wrapmargin=10
+unset markers
+set reply_regexp="^((re([\[^-][0-9]+\]?)*|aw|antwort|antw|wg):[ \t]*)+" 

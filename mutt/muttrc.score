@@ -1,0 +1,41 @@
+set score_threshold_flag=70     # auto-flag messages w/ score >= 70
+
+# Remove all scorings
+unscore *
+
+# Default scoring for all messages
+score ~A                                                           +20
+
+# PGP signed / encrypted messages
+score '~g|~G'                                                      +5
+
+# this is a deleted email
+score ~D                                                           =2
+
+# based on recipient address
+score "~t handygg@faderweb.de"                                     =0
+score "~t jan.fader@piratenpartei.ch"                              +50
+
+# The good ones ;) based on sender address
+score "~f @fh-isny\.de"                                            +10
+score "~f @mail.fh-isny\.de"                                       +10
+score "~f @nth-isny\.de"                                           +10
+score "~f @nta-isny\.de"                                           +10
+score "~f @nta-isny\.eu"                                           +10
+score "~f @nta-isny\.com"                                          +10
+score "~f @chemieschule-isny\.de"                                  +10
+
+# the lovely one :)
+score "~f vroni@faderweb\.de"                                      +40
+
+# replied messages
+score '~Q'                                                         -5
+
+# Scoring-Colors
+color   index           yellow          default  "~n 30-"
+color   index           brightcyan      default  "~n 35-"
+color   index           cyan            default  "~n 40-"
+color   index           magenta         default  "~n 45-"
+color   index           green           default  "~n 50-"
+color   index           red             yellow   "~n 70-"
+color   index           brightred       yellow   "~n 100-"

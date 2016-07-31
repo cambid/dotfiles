@@ -1,0 +1,4 @@
+# How to get my GPG-Key
+my_hdr X-GPG-Key: gpg --recv-keys --keyserver wwwkeys.pgp.net 0E27FA44
+# Born to frag!
+my_hdr X-Editor:`vim --version | grep "VIM - Vi IM" | sed 's/ (.*)//g'``vim --version | head -n 2 | tail -n 1 | cut -f2 -d":"`

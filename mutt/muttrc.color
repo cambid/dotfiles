@@ -1,0 +1,56 @@
+#uncolor index *
+#uncolor header *
+
+# Attachments lila
+color   attachment      magenta         default
+
+# Fehler rot
+color   error           red             default
+
+# Der Header Gelb, Subject (Betreff) leuchtend, das To in weiß
+color   header          yellow       default   "^Subject: "
+color   header          brightyellow    default   "^From: "
+color   header          brightblue      default   "^To:"
+color   header          blue            default   "^Date:"
+color   header          green           default   "^CC:"
+color   header          brightmagenta   default   "^(User-Agent|X-Mailer):"
+color   header          red             default   "^BCC:"
+color   header          brightgreen     default   "^Resent-From"
+color   header          brightred       default   "^X-SpamTest"
+color   hdrdefault      brightblack     default
+
+# Der "Leuchtbalken"
+color   indicator       yellow    red
+color   markers         brightblue      default
+
+# Die Nachricht selbst auch bunt machen; dabei je Quotingebene
+# eine andere Farbe --> bringt Übersicht
+color   message         white           default
+color   normal          white           default
+color   quoted          yellow          default
+color   quoted1         green           default
+color   quoted2         cyan            default
+color   quoted3         red             default
+color   quoted4         blue            default
+
+# Die Signatur nicht so hell anzeigen
+color   signature       brightblack     default
+# Statuszeile in schwarz-hellrot
+color   status          brightblue    black
+# Link auf http/https/ftp in hellblau/schwarz
+color   body            brightblue      black (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9@]+
+
+# Neue Nachrichten hellblau
+color   index           brightblue      default ~N
+
+# "Wichtig"-Geflaggte nachrichten
+color   index           yellow          blue      ~F
+
+# "Tagged"-Nachrichten
+color   index           magenta         black     ~T
+
+# "Deleted"-Nachrichten
+color index             brightblack     default   ~D
+
+# color of folders with new mail in sidebar
+color sidebar_new brightblue black
