@@ -1,17 +1,18 @@
 # disable arrow keys
-bind index,pager <down> noop
-bind index,pager <up> noop
+bind index,pager,browser <down> noop
+bind index,pager,browser <up> noop
 
 bind index \cD delete-message
 bind pager \cD delete-message
 
 # mit <F2> E-Mail in Urlview pipen
-macro pager <F2> <pipe-entry>'urlview'<enter> 'Follow links with urlview'
-macro index <F2> <pipe-entry>'urlview'<enter> 'Follow links with urlview'
+macro index,pager <F2> <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 
 # Profil wechseln. Naeheres unter http://www.acoustics.hut.fi/~mara/mutt/muttprofile.html
-macro index <F10> "!muttprofile -d ~/.mutt\n:source ~/.mutt/profile.active\n" "Call muttprofile and load profile"
-macro pager <F10> "!muttprofile -d ~/.mutt\n:source ~/.mutt/profile.active\n" "Call muttprofile and load profile"
+macro index,pager <F10> "!muttprofile -d ~/.mutt\n:source ~/.mutt/profile.active\n" "Call muttprofile and load profile"
 
-bind index B resend-message
-bind pager B resend-message
+# unset limit
+macro index,pager a "<limit>all\n" "show all messages (undo limit)"
+
+# bounce messages
+bind index,pager B resend-message
