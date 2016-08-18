@@ -5,10 +5,6 @@ bind index,pager <up> noop
 bind index \cD delete-message
 bind pager \cD delete-message
 
-# mit <f4> die Sidebar ein- bzw. ausblenden
-macro index <f4> ":toggle sidebar_visible\n"
-macro pager <f4> ":toggle sidebar_visible\n"
-
 # mit <F2> E-Mail in Urlview pipen
 macro pager <F2> <pipe-entry>'urlview'<enter> 'Follow links with urlview'
 macro index <F2> <pipe-entry>'urlview'<enter> 'Follow links with urlview'
