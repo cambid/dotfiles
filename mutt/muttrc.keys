@@ -6,14 +6,6 @@ bind index        <down>          next-entry
 bind index \cD delete-message
 bind pager \cD delete-message
 
-# ctrl-n, ctrl-p to select next, prev folder ctrl-o to open selected folder
-bind index \CP sidebar-prev
-bind index \CN sidebar-next
-bind index \CO sidebar-open
-bind pager \CP sidebar-prev
-bind pager \CN sidebar-next
-bind pager \CO sidebar-open
-
 # mit <f4> die Sidebar ein- bzw. ausblenden
 macro index <f4> ":toggle sidebar_visible\n"
 macro pager <f4> ":toggle sidebar_visible\n"
