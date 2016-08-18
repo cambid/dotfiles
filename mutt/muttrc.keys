@@ -1,7 +1,6 @@
-bind pager        <up>            previous-entry
-bind pager        <down>          next-entry
-bind index        <up>            previous-entry
-bind index        <down>          next-entry
+# disable arrow keys
+bind index,pager <down> noop
+bind index,pager <up> noop
 
 bind index \cD delete-message
 bind pager \cD delete-message
