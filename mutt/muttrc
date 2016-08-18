@@ -7,7 +7,7 @@ source $HOME/.mutt/muttrc.color
 source $HOME/.mutt/muttrc.score
 source $HOME/.mutt/muttrc.hooks
 source $HOME/.mutt/muttrc.alternates
-source $HOME/.mutt/muttrc.gpg
+source $HOME/.mutt/muttrc.gnupg
 source $HOME/.mutt/muttrc.keys
 source $HOME/.mutt/muttrc.alias
 source $HOME/.mutt/muttrc.sidebar

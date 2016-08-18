@@ -1,3 +1,4 @@
+
 # GnuPG configuration
 set pgp_autosign=yes
 set pgp_auto_decode = yes
@@ -16,6 +17,6 @@ set pgp_list_pubring_command="gpg   --no-verbose --batch --quiet   --with-colons
 set pgp_list_secring_command="gpg   --no-verbose --batch --quiet   --with-colons --list-secret-keys %r" 
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 set pgp_timeout=1
-set pgp_encrypt_only_command="pgpewrap gpg  --pinentry-mode loopback --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to 0x0E27FA44 -- -r %r -- %f"
-set pgp_encrypt_sign_command="pgpewrap gpg --pinentry-mode loopback --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to 0x0E27FA44 -- -r %r -- %f"
-set pgp_sign_as=0x0E27FA44
+set pgp_encrypt_only_command="pgpewrap gpg  --pinentry-mode loopback --batch --quiet --no-verbose --output - --encrypt --textmode --armor --always-trust --encrypt-to ED7834905CAF79644D5685011A6BDEFB0E27FA44 -- -r %r -- %f"
+set pgp_encrypt_sign_command="pgpewrap gpg --pinentry-mode loopback --passphrase-fd 0 --batch --quiet --no-verbose --textmode --output - --encrypt --sign %?a?-u %a? --armor --always-trust --encrypt-to ED7834905CAF79644D5685011A6BDEFB0E27FA44 -- -r %r -- %f"
+set pgp_sign_as=ED7834905CAF79644D5685011A6BDEFB0E27FA44
