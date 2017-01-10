@@ -6,7 +6,7 @@ send-hook ^.*@lists\\.piratenpartei\\.de$ \
    "my_hdr From: jan.fader@web.de ;\
    set signature="~/.sig/sig-private-piraten"
 
-send-hook ^dreilaendereck@freifunk\\.net$ \
+send-hook ^ff3l@ff3l\\.net$ \
    "my_hdr From: freifunk@faderweb.de ;\
    set signature=
 
