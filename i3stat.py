@@ -88,6 +88,9 @@ status.register("mpd",
                 },)
 
 # shows spotify status
-status.register("spotify")
+status.register("spotify",
+                format="{artist} {status} {title}"
+               )
+
 
 status.run()
