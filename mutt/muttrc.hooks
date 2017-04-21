@@ -1,6 +1,6 @@
 send-hook . \
    "unmy_hdr From: ;\
-   set signature="~/.sig/sig-private-basel" \
+   set signature="~/.sig/sig-private-solothurn" \
 
 send-hook ^.*@lists\\.piratenpartei\\.de$ \
    "my_hdr From: jan.fader@web.de ;\
