@@ -12,6 +12,7 @@ alias ..='cd ..'
 alias ...="cd ../.."
 alias svn='colorsvn'
 alias vi='vim'
+alias mutt='neomutt'
 alias mp3-downloader="youtube-dl -tc --extract-audio --audio-format=mp3 --audio-quality 256k"
 alias bzvfr="ssh bzvfr"
 alias sophie="ssh sophie"
