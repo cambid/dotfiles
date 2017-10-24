@@ -105,6 +105,7 @@ map <F8> :w!<CR> :!make show<CR><CR>
 
 " set type to mail for mutt-tmp-files
 au BufNewFile,BufRead mutt-*-\w\+,mutt\w\{6\},ae\d setf mail
+au BufNewFile,BufRead neomutt-*-\w\+,mutt\w\{6\},ae\d setf mail
 
 " always show status line
 set laststatus=2
