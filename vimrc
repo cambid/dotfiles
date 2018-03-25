@@ -50,6 +50,7 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pearofducks/ansible-vim'
+Plugin 'stephpy/vim-yaml'
 Plugin 'tpope/vim-vinegar'
 Plugin 'hashivim/vim-vagrant'
 
