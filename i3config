@@ -139,11 +139,11 @@ bindsym Escape mode "default"
 bindsym $mod+r mode "resize"
 
 # JFE
-bindsym Mod4+c exec mpc toggle
-bindsym Mod4+n exec mpc prev
-bindsym Mod4+b exec mpc next
-bindsym Mod4+x exec mpc play
-bindsym Mod4+v exec mpc stop
+bindsym Mod4+c exec playerctl play-pause
+bindsym Mod4+n exec playerctl previous
+bindsym Mod4+b exec playerctl next
+bindsym Mod4+x exec playerctl play
+bindsym Mod4+v exec playerctl pause
 bindsym Mod4+l exec i3lock -i ~/.backgrounds/archlinux.png -f
 bindsym Mod4+h exec i3lock -i ~/.backgrounds/archlinux.png -f && systemctl hybrid-sleep
 bindsym Mod4+m exec ~/bin/xinput-toggle -r "ALP"
