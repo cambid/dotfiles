@@ -20,7 +20,7 @@ status.register("temp",
                 format="{temp:.0f}°C",)
 
 status.register("solaar",
-                nameOfDevice="M570")
+                nameOfDevice="MX Ergo")
 
 # This would look like this:
 # Discharging 6h:51m
