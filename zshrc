@@ -110,3 +110,8 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.aliases
 source $HOME/.env
+
+# remove aliases from common-aliases
+unalias rm
+unalias mv
+unalias cp
