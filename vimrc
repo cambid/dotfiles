@@ -237,3 +237,6 @@ nnoremap <silent> <leader>sb :windo set invscrollbind <CR>
 
 " toggles without fn-keys
 nnoremap <leader>1 :GundoToggle<CR>
+
+" map co to =o for old unimpaired syntax
+nmap co =o
