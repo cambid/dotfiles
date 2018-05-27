@@ -16,3 +16,4 @@ alias shell="ssh shell"
 alias jump="ssh jump"
 alias spotify="spotify --force-device-scale-factor=2"
 alias pa="pacmixer"
+alias ip='ip --color'
