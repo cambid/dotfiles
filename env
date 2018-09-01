@@ -22,3 +22,5 @@ export IPOD_MOUNTPOINT="/mnt/ipod"
 if [ -d ~/bin ] ; then
     PATH=$HOME/bin:"${PATH}"
 fi
+
+export TERM=xterm-256color
