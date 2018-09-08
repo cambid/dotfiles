@@ -144,8 +144,8 @@ bindsym Mod4+n exec playerctl previous
 bindsym Mod4+b exec playerctl next
 bindsym Mod4+x exec playerctl play
 bindsym Mod4+v exec playerctl pause
-bindsym Mod4+l exec i3lock -i ~/.backgrounds/archlinux.png -f
-bindsym Mod4+h exec i3lock -i ~/.backgrounds/archlinux.png -f && systemctl hybrid-sleep
+bindsym Mod4+l exec xset dpms 1 1 1 && i3lock -n -c 000000 -f && xset -dpms
+bindsym Mod4+h exec xset dpms 1 1 1 && i3lock -c 000000 -f && systemctl hybrid-sleep && xset -dpms
 bindsym Mod4+m exec ~/bin/xinput-toggle -r "ALP"
 bindsym XF86AudioLowerVolume exec "amixer set Master 5%-"
 bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+"
