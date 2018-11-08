@@ -183,9 +183,6 @@ inoremap jj <Esc>
 noremap s :s//g<LEFT><LEFT>
 noremap S :%s//g<LEFT><LEFT>
 
-" show buffers in headline
-let g:airline#extensions#tabline#enabled = 1
-
 " new buffer
 nmap <leader>T :enew<CR>
 
