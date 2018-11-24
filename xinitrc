@@ -21,7 +21,7 @@ redshift &
 dbus-launch &
 pulseaudio --start
 mpd
-twmnd &
+dunst &
 xinput set-prop --type=float "ALP0011:00 044E:120C" "libinput Accel Speed" 1.0
 xinput --set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1.0
 eval "$(ssh-agent)"
