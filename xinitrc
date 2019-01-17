@@ -25,7 +25,7 @@ dunst &
 xinput set-prop --type=float "ALP0011:00 044E:120C" "libinput Accel Speed" 1.0
 xinput --set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1.0
 eval "$(ssh-agent)"
-shutter --min_at_startup &
+flameshot &
 ssh-add
 # starting window manager
 exec i3
