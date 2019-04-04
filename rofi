@@ -1,0 +1,13 @@
+rofi.width:                          100
+rofi.lines:                          1
+rofi.columns:                        9
+rofi.font:                           mono 20
+rofi.bw:                             0
+rofi.location:                       1
+rofi.padding:                        1
+rofi.disable-history:                true
+rofi.color-active: #222222, #b1b4b3, #222222, #007763, #b1b4b3
+rofi.color-window: 222222, #222222, #b1b4b3
+rofi.combi-hide-mode-prefix:         true
+rofi.kb-row-tab:
+rofi.kb-row-select:                  Tab

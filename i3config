@@ -17,8 +17,8 @@ bindsym $mod+Return exec termite
 # kill focused window
 bindsym $mod+Shift+Q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -sb black -sf orange -nb orange -nf black
+# start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run -modi run -disable-history -hide-scrollbar
 
 # change focus
 bindsym $mod+j focus left
