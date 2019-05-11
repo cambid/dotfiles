@@ -18,7 +18,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -modi run -disable-history -hide-scrollbar
+bindsym $mod+d exec rofi -show run -modi run
 
 # change focus
 bindsym $mod+j focus left
