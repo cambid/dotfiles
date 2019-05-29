@@ -67,7 +67,7 @@ set bg=dark
 set title
 
 " define color
-colorscheme PaperColor
+colorscheme 256-jungle
 
 " activate systax highlight
 syntax on
