@@ -10,6 +10,7 @@ export ZSH=/home/jfader/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="sunrise"
 ZSH_THEME="kphoen"
+ZSH_THEME=powerlevel10k/powerlevel10k
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -62,17 +63,17 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   archlinux
+  common-aliases
   docker
   git
-  github
   history
   history-substring-search
+  last-working-dir
   screen
   ssh-agent
   sudo
   systemd
   vagrant
-  common-aliases
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -115,3 +116,4 @@ source $HOME/.env
 unalias rm
 unalias mv
 unalias cp
+source ~/.purepower
