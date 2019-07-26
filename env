@@ -19,8 +19,11 @@ export GPG_TTY
 # used by gnupod-utils
 export IPOD_MOUNTPOINT="/mnt/ipod"
 
-if [ -d ~/bin ] ; then
+if [ -d ~/bin ]; then
     PATH=$HOME/bin:"${PATH}"
+fi
+if [ -d ~/.local/bin ]; then
+    PATH=$HOME/.local/bin:"${PATH}"
 fi
 
 export TERM=xterm-256color
