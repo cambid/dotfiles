@@ -13,7 +13,7 @@ xset b off
 # no screensaver
 xset s off
 # setting background
-feh --bg-scale ~/.backgrounds/makepkg_not_war_flat-back.png
+feh --bg-scale ~/.backgrounds/active
 # starting helper programs
 clipit -dn &
 solaar &
