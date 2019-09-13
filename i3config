@@ -147,7 +147,7 @@ bindsym Mod4+n exec playerctl previous
 bindsym Mod4+b exec playerctl next
 bindsym Mod4+x exec playerctl play
 bindsym Mod4+v exec playerctl pause
-bindsym Mod4+l exec xset dpms 60 120 300 && i3lock -n --clock --indicator --blur=10 --datecolor="FFFFFFFF" --timecolor="FFFFFFFF" --datestr="%d.%m.%Y"&& xset -dpms
+bindsym Mod4+l exec xset dpms 60 120 300 && i3lock -n --clock --indicator --blur=15 --datecolor="FFFFFFFF" --timecolor="FFFFFFFF" --datestr="%d.%m.%Y"&& xset -dpms
 bindsym Mod4+h exec xset dpms 1 1 1 && i3lock -c 000000 -f && systemctl hybrid-sleep && xset -dpms
 bindsym Mod4+m exec ~/bin/xinput-toggle -r "ALP"
 bindsym XF86AudioLowerVolume exec "amixer set Master 5%-"
