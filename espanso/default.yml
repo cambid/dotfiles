@@ -1,0 +1,38 @@
+# backend: Inject
+matches:
+
+  - trigger: "ffg"
+    replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
+
+  - trigger: "ddate"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d.%m.%Y"
+
+  - trigger: "fstamp"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  - trigger: "ddatum"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d. %B %Y"
+
+  - trigger: "ttime"
+    replace: "{{mytime}}"
+    vars:
+      - name: mytime
+        type: date
+        params:
+          format: "%H:%M"
+
