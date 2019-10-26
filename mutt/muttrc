@@ -89,5 +89,6 @@ set tilde
 # Saubere Umbrueche
 set smart_wrap
 set wrapmargin=10
+set wrap=0
 unset markers
 set reply_regexp="^((re([\[^-][0-9]+\]?)*|aw|antwort|antw|wg):[ \t]*)+" 
