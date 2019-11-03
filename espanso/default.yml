@@ -12,7 +12,7 @@ matches:
         params:
           format: "%d.%m.%Y"
 
-  - trigger: "fstamp"
+  - trigger: "ffstamp"
     replace: "{{mydate}}"
     vars:
       - name: mydate
