@@ -4,6 +4,9 @@ matches:
   - trigger: "ffg"
     replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
 
+  - trigger: "hhotline"
+    replace: "Diese Anfrage ist technische Hotline. Bitte an den Hotline-Techniker gemäss Wochenplan stellen."
+
   - trigger: "ddate"
     replace: "{{mydate}}"
     vars:
