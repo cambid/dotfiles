@@ -1,4 +1,4 @@
-# backend: Inject
+toggle_key: OFF
 matches:
 
   - trigger: "ffg"
