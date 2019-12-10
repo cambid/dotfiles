@@ -7,6 +7,9 @@ matches:
   - trigger: "hhotline"
     replace: "Diese Anfrage ist technische Hotline. Bitte an den Hotline-Techniker gemäss Wochenplan stellen."
 
+  - trigger: "pprivat"
+    replace: "Dein Bedürfnis über das zu reden was dich privat und politisch beschäftigt verstehe ich - jedoch bin ich beruflich und privat so eingespannt, dass ich dir nicht die gewünschte Aufmerksamkeit entgegen bringen kann. Es käme mir daher sehr entgegen wenn wir uns bis auf weiteres auf die Arbeit konzentrieren würden. Vielen Dank dafür"
+
   - trigger: "ddate"
     replace: "{{mydate}}"
     vars:
