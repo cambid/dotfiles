@@ -16,7 +16,7 @@ xset s off
 feh --bg-scale ~/.backgrounds/active
 # starting helper programs
 clipit -dn &
-solaar &
+solaar --tray &
 redshift &
 dbus-launch &
 pulseaudio --start
