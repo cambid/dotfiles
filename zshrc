@@ -76,6 +76,8 @@ plugins=(
   sudo
   systemd
   vagrant
+  alias-tips
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
