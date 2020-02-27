@@ -63,6 +63,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   archlinux
+  zsh-autosuggestions
+  zsh-syntax-highlighting
   common-aliases
   docker
   git
@@ -111,6 +113,9 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.aliases
 source $HOME/.env
+
+# keyboard bindings
+bindkey '^ ' autosuggest-clear
 
 # remove aliases from common-aliases
 unalias rm
