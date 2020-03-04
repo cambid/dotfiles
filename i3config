@@ -172,6 +172,9 @@ client.focused_inactive   #333333      #333333      #999999
 client.unfocused          #333333      #333333      #999999
 client.urgent             #FF0000      #8C5665      #999999
 
+# switch to urgent window
+bindsym $mod+x [urgent=latest] focus
+
 # float all teams notifications
 for_window [title="Microsoft Teams Notification" class="microsoft teams - preview"] floating enable
 for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable
