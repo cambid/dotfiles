@@ -55,7 +55,7 @@ set header_cache="$HOME/.mutt/cache"
 
 set editor='vim -c "set tw=75"'
 
-mailboxes +INBOX +INBOX.SPAM +INBOX.Mailinglisten +INBOX.Mailinglisten.dia-list +INBOX.Mailinglisten.centerIM +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux +INBOX.Mailinglisten.keynav +INBOX.Piratenpartei +INBOX.Piratenpartei.BB +INBOX.Piratenpartei.BB-discuss +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Piratenpartei.TechTalk +INBOX.Piratenpartei.CH-coordination +INBOX.Piratenpartei.CH-Newsletter
+mailboxes +INBOX +INBOX.SPAM +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux  +INBOX.Piratenpartei +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Drafts
 
 set index_format="%4C %Z %4N     %d [%?H?%5H&     ?] {%3M} %-35.35F (%5c) %s "
 set date_format="!%a %d. %b. %Y"
