@@ -12,6 +12,7 @@ alias mutt='neomutt'
 alias mp3-downloader="youtube-dl -tc --extract-audio --audio-format=mp3 --audio-quality 256k"
 alias bzvfr="ssh bzvfr"
 alias sophie="ssh sophie"
+alias s="ssh sophie"
 alias shell="ssh shell"
 alias jump="ssh jump"
 alias spotify="spotify --force-device-scale-factor=2"
