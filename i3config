@@ -191,3 +191,7 @@ hide_edge_borders smart_no_gaps
 
 gaps inner 5
 gaps outer 0
+
+# clipmenu
+bindsym $mod+p exec --no-startup-id CM_LAUNCHER=rofi clipmenu -i
+bindsym $mod+Shift+h exec --no-startup-id CM_LAUNCHER=rofi clipmenu -i
