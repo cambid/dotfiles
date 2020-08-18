@@ -15,7 +15,7 @@ xset s off
 # setting background
 feh --bg-scale ~/.backgrounds/active
 # starting helper programs
-clipit -dn &
+clipmenud &
 solaar --tray &
 redshift &
 dbus-launch &
