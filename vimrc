@@ -50,7 +50,7 @@ Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'pearofducks/ansible-vim'
-Plugin 'stephpy/vim-yaml'
+Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'tpope/vim-vinegar'
 Plugin 'hashivim/vim-vagrant'
 
@@ -241,3 +241,5 @@ nnoremap <leader>se :vsp $MYVIMRC<CR>
 
 " map co to =o for old unimpaired syntax
 nmap co =o
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
