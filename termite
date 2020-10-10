@@ -1,5 +1,5 @@
 [options]
-font = Droid Sans Mono 9
+font = FiraCode Nerd Font 9
 mouse_autohide = true
 clickable_url = false
 allow_bold = true
