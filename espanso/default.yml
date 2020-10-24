@@ -1,6 +1,9 @@
 toggle_key: OFF
 matches:
 
+  - trigger: "llg"
+    replace: "Liebe Grüsse\n\nJan"
+
   - trigger: "ffg"
     replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
 
@@ -41,4 +44,3 @@ matches:
         type: date
         params:
           format: "%H:%M"
-
