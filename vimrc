@@ -1,58 +1,44 @@
-" install vundle
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-  echo "Installing Vundle..."
-  echo ""
-  silent !mkdir -p ~/.vim/bundle
-  silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-  let iCanHazVundle=0
-endif
-
-" load vundle
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Plugin 'gmarik/vundle'
+" load plugins
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-airline'
+Plug 'ervandew/supertab'
+Plug 'flazz/vim-colorschemes'
+Plug 'godlygeek/tabular'
+Plug 'regedarek/ZoomWin'
+Plug 'rodjek/vim-puppet'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'reedes/vim-textobj-sentence'
+Plug 'kana/vim-textobj-user'
+Plug 'glts/vim-textobj-comment'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ntpeters/vim-airline-colornum'
+Plug 'python-mode/python-mode'
+Plug 'airblade/vim-gitgutter'
+Plug 'jamessan/vim-gnupg'
+Plug 'tpope/vim-repeat'
+Plug 'sjl/gundo.vim'
+Plug 'evannook/matchit'
+Plug 'jiangmiao/auto-pairs'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'easymotion/vim-easymotion'
+Plug 'pearofducks/ansible-vim'
+Plug 'pedrohdz/vim-yaml-folds'
+Plug 'tpope/vim-vinegar'
+Plug 'hashivim/vim-vagrant'
+" Initialize plugin system
+call plug#end()
 
 " change the mapleader from \ to ,
 let mapleader=","
 
 " set theme for airline
 let g:airline_theme = "jellybeans"
-
-" load plugins
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'bling/vim-airline'
-Plugin 'ervandew/supertab'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'godlygeek/tabular'
-Plugin 'regedarek/ZoomWin'
-Plugin 'rodjek/vim-puppet'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'reedes/vim-textobj-sentence'
-Plugin 'kana/vim-textobj-user'
-Plugin 'glts/vim-textobj-comment'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ntpeters/vim-airline-colornum'
-Plugin 'python-mode/python-mode'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'tpope/vim-repeat'
-Plugin 'sjl/gundo.vim'
-Plugin 'evannook/matchit'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'AndrewRadev/splitjoin.vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'pearofducks/ansible-vim'
-Plugin 'pedrohdz/vim-yaml-folds'
-Plugin 'tpope/vim-vinegar'
-Plugin 'hashivim/vim-vagrant'
 
 filetype on
 
