@@ -62,6 +62,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  k
   archlinux
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -123,4 +124,6 @@ bindkey '^ ' autosuggest-clear
 unalias rm
 unalias mv
 unalias cp
-source ~/.purepower
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
