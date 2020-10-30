@@ -31,6 +31,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'tpope/vim-vinegar'
 Plug 'hashivim/vim-vagrant'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Initialize plugin system
 call plug#end()
 
