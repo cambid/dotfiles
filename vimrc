@@ -21,7 +21,7 @@ Plug 'python-mode/python-mode'
 Plug 'airblade/vim-gitgutter'
 Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-repeat'
-Plug 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
 Plug 'evannook/matchit'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Yggdroot/indentLine'
@@ -241,7 +241,7 @@ set undolevels=100
 nnoremap <silent> <leader>sb :windo set invscrollbind <CR>
 
 " toggles without fn-keys
-nnoremap <leader>1 :GundoToggle<CR>
+nnoremap <leader>1 :UndotreeToggle<CR>
 
 " manage vimrc
 nnoremap <leader>sv :source $MYVIMRC<CR>
