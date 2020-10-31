@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-airline'
-Plug 'ervandew/supertab'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'flazz/vim-colorschemes'
 Plug 'godlygeek/tabular'
 Plug 'regedarek/ZoomWin'
@@ -23,7 +23,6 @@ Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-repeat'
 Plug 'sjl/gundo.vim'
 Plug 'evannook/matchit'
-Plug 'jiangmiao/auto-pairs'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
@@ -34,6 +33,25 @@ Plug 'hashivim/vim-vagrant'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " Initialize plugin system
 call plug#end()
+
+" install coc extensions
+let g:coc_global_extensions = ['coc-css', 'coc-go',  'coc-python', 'coc-git', 'coc-markdownlint', 'coc-pairs' ]
+
+" Use tab for trigger completion with characters ahead and navigate.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " change the mapleader from \ to ,
 let mapleader=","
