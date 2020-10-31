@@ -41,6 +41,9 @@ let mapleader=","
 " set theme for airline
 let g:airline_theme = "jellybeans"
 
+" don't close preview on switch to other buffer
+let g:mkdp_auto_close = 0
+
 filetype on
 
 " automatic reloading of vimrc
