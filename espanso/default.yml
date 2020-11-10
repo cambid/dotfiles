@@ -7,6 +7,9 @@ matches:
   - trigger: ":ffg"
     replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
 
+  - trigger: ":vdrr"
+    replace: "Vielen Dank für Ihre Rückmeldung."
+
   - trigger: "_hhotline"
     replace: "Diese Anfrage ist technische Hotline. Bitte an den Hotline-Techniker gemäss Wochenplan stellen."
 
