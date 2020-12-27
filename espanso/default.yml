@@ -10,7 +10,7 @@ matches:
   - trigger: ":vdrr"
     replace: "Vielen Dank für Ihre Rückmeldung."
 
-  - trigger: "_hhotline"
+  - trigger: ":hhotline"
     replace: "Diese Anfrage ist technische Hotline. Bitte an den Hotline-Techniker gemäss Wochenplan stellen."
 
   - trigger: ":pprivat"
