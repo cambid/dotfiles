@@ -17,7 +17,9 @@ status.register("load",
 
 # Shows your CPU temperature, if you have a Intel CPU
 status.register("temp",
-                format="{temp:.0f}°C",)
+                format="{Package_id_0}°C",
+                lm_sensors_enabled=True,
+                dynamic_color=True)
 
 status.register("solaar",
                 nameOfDevice="MX Ergo")
@@ -89,8 +91,6 @@ status.register("mpd",
 
 # shows spotify status
 status.register("spotify",
-                format="{artist} {status} {title}"
-               )
-
+                format="{artist} {status} {title}")
 
 status.run()
