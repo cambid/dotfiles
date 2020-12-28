@@ -12,6 +12,7 @@ source $HOME/.mutt/muttrc.keys
 source $HOME/.mutt/muttrc.alias
 source $HOME/.mutt/muttrc.sidebar
 source $HOME/.mutt/muttrc.spam
+source $HOME/.mutt/dracula/dracula.muttrc
 
 # Schaltet das Ignorieren der wichtigen Header aus
 unignore Date Subject From To CC BCC Resent-From X-Spam-Status User-Agent X-Mailer
