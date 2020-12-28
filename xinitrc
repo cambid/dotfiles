@@ -18,6 +18,7 @@ feh --bg-scale ~/.backgrounds/active
 clipmenud &
 solaar --tray &
 redshift &
+unclutter --timeout 3 &
 dbus-launch &
 pulseaudio --start
 mpd
