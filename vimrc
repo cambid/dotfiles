@@ -31,6 +31,7 @@ Plug 'pedrohdz/vim-yaml-folds'
 Plug 'tpope/vim-vinegar'
 Plug 'hashivim/vim-vagrant'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Initialize plugin system
 call plug#end()
 
@@ -75,7 +76,7 @@ set bg=dark
 set title
 
 " define color
-colorscheme 256-jungle
+colorscheme dracula
 
 " activate systax highlight
 syntax on
