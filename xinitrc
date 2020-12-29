@@ -15,7 +15,7 @@ xset s off
 # setting background
 feh --bg-scale ~/.backgrounds/active
 # starting helper programs
-clipmenud &
+CM_SYNC_PRIMARY_TO_CLIPBOARD=1 clipmenud &
 solaar --tray &
 redshift &
 unclutter --timeout 3 &
