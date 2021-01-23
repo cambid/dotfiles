@@ -20,7 +20,6 @@ solaar --tray &
 redshift &
 unclutter --timeout 3 &
 dbus-launch &
-pulseaudio --start
 mpd
 dunst &
 xinput set-prop --type=float "ALP0011:00 044E:120C" "libinput Accel Speed" 1.0
