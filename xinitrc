@@ -22,7 +22,8 @@ unclutter --timeout 3 &
 dbus-launch &
 mpd
 dunst &
-xinput set-prop --type=float "ALP0011:00 044E:120C" "libinput Accel Speed" 1.0
+xinput set-prop --type=float "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 1.0
+xinput set-prop --type=float "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 1.0
 xinput --set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1.0
 eval "$(ssh-agent)"
 flameshot &
