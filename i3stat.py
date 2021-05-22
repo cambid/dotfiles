@@ -52,7 +52,7 @@ status.register("runwatch",
 #
 # Note: the network module requires PyPI package netifaces-py3
 status.register("network",
-                interface="eth0",
+                interface="enp44s0u1",
                 format_up="{v4cidr}",)
 
 # Has all the options of the normal network and adds some wireless specific
@@ -61,7 +61,7 @@ status.register("network",
 # Note: requires both netifaces-py3 and basiciw
 
 status.register("network",
-                interface="wlan0",
+                interface="wlp0s20f3",
                 format_up="{essid} {quality:03.0f}% {v4cidr}",)
 
 # Shows disk usage of /home
