@@ -2,9 +2,6 @@
 import:
   - ~/DEVELOPMENT/gits/cambid/dotfiles/alacritty/dracula.yml
 
-env:
-  TERM: screen-256color
-
 font:
   normal:
     family: FiraCode Nerd Font
