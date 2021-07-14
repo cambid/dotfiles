@@ -7,6 +7,9 @@ matches:
   - trigger: ":ffg"
     replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
 
+  - trigger: ":ccall"
+    replace: "Bitte hierfür gemäss Kommunikationskonzept einen Call erstellen."
+
   - trigger: ":vdrr"
     replace: "Vielen Dank für Ihre Rückmeldung."
 
