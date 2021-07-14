@@ -72,7 +72,6 @@ plugins=(
   history
   history-substring-search
   last-working-dir
-  screen
   ssh-agent
   sudo
   systemd
