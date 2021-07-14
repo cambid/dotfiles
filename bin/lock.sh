@@ -11,6 +11,9 @@ gpg-connect-agent reloadagent /bye
 # disable notifications but queue them
 dunstctl set-paused true
 
+# shutdown monitor after five seconds
+xset dpms 5
+
 i3lock -i ${TMPBG} "$@"
 dunstctl set-paused false
 rm ${TMPBG}
