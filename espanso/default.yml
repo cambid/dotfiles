@@ -13,6 +13,9 @@ matches:
   - trigger: ":vdrr"
     replace: "Vielen Dank für Ihre Rückmeldung."
 
+  - trigger: ":nnotfall"
+    replace: "Du hast ja diese Woche die Notfallhotline. Bist du in den Queue eingeloggt? Im Wochenplan fehlt dein Eintrag diesbzgl. noch."
+
   - trigger: ":hhotline"
     replace: "Diese Anfrage ist technische Hotline. Bitte an den Hotline-Techniker gemäss Wochenplan stellen."
 
