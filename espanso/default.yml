@@ -4,6 +4,9 @@ matches:
   - trigger: ":llg"
     replace: "Liebe Grüsse\n\nJan"
 
+  - triggers: ["Ustü","ustü","UStü"]
+    replace: "Unterstützung"
+
   - trigger: ":ffg"
     replace: "Freundliche Grüsse\n\nbpm consult ag\nJan Fader"
 
