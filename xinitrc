@@ -5,7 +5,6 @@ xrandr --dpi 220
 # personal keymap
 [[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
 setxkbmap -option shift:both_capslock
-setxkbmap -option caps:escape
 # no energy-star
 xset -dpms
 # no bell
