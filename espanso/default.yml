@@ -16,6 +16,9 @@ matches:
   - trigger: ":vdrr"
     replace: "Vielen Dank für Ihre Rückmeldung."
 
+  - trigger: ":kkomm"
+    replace: "Deinen Kommentar habe ich leider nur zufällig gesehen, weil ich in diesem Call weder Bearbeiter*in noch Analysierende Drittperson bin."
+
   - trigger: ":nnotfall"
     replace: "Du hast ja diese Woche die Notfallhotline. Bist du in den Queue eingeloggt? Im Wochenplan fehlt dein Eintrag diesbzgl. noch."
 
