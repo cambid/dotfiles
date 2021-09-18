@@ -1,5 +1,1 @@
 keycode  91 = KP_Delete period KP_Delete period
-! Caps_Lock soll nicht mehr sperren
-remove lock = Caps_Lock
-! Caps_Lock = Compose
-keycode 66 = Multi_key
