@@ -3,9 +3,9 @@ xrandr --dpi 220
 # personal colors and fonts
 [[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources
 # personal keymap
-[[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
 setxkbmap -option shift:both_capslock
 setxkbmap -option caps:escape
+[[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
 # no energy-star
 xset -dpms
 # no bell
