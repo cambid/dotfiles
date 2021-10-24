@@ -141,6 +141,11 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
+# replicate original dunst shortcuts
+bindsym Control+space exec dunstctl close
+bindsym Control+Shift+space exec dunstctl close-all
+bindsym Control+asciicircum exec dunstctl history-pop
+
 # JFE
 bindsym Mod4+c exec playerctl play-pause
 bindsym Mod4+n exec playerctl previous
