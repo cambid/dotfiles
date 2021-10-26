@@ -186,20 +186,27 @@ for_window [title="Microsoft Teams Notification" class="microsoft teams - previe
 for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Preview"] floating enable
 no_focus [title="Microsoft Teams Notification"]
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-  colors {
-    background         #282A36
-    statusline         #F8F8F2
-    separator          #44475A
-    focused_workspace  #44475A #44475A #F8F8F2
-    active_workspace   #282A36 #44475A #F8F8F2
-    inactive_workspace #282A36 #282A36 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
-  }
-  status_command    python ~/.config/i3stat.py
+  id 2
+  status_command bumblebee-status \
+  -m \
+  playerctl \
+  load \
+  memory \
+  disk \
+  nic \
+  battery \
+  sensors \
+  datetime \
+  pasink \
+  pasource \
+  solaar \
+  -p \
+  nic.states=^down \
+  datetime.format="%a %d %b %H:%M:%S" \
+  playerctl.layout="playerctl.song" \
+  solaar.device="MX Ergo" \
+  -t dracula-powerline
 }
 
 smart_borders on
