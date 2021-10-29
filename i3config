@@ -212,6 +212,10 @@ hide_edge_borders smart_no_gaps
 gaps inner 5
 gaps outer 0
 
+# global push-to-talk
+bindsym Super_L exec "pactl set-source-mute @DEFAULT_SOURCE@ off"
+bindsym --release Super_L exec "pactl set-source-mute @DEFAULT_SOURCE@ on"
+
 # clipmenu
 bindsym $mod+p exec --no-startup-id CM_LAUNCHER=rofi clipmenu -i
 bindsym $mod+Shift+h exec --no-startup-id CM_LAUNCHER=rofi clipmenu -i
