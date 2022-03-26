@@ -29,6 +29,8 @@ xinput --set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1.0
 eval "$(ssh-agent)"
 nextcloud &
 flameshot &
+nm-applet &
+keepassxc &
 ssh-add
 # starting window manager
 exec i3
