@@ -78,7 +78,6 @@ plugins=(
   vagrant
   alias-tips
   z
-  zsh-aliases-exa
 )
 
 source $ZSH/oh-my-zsh.sh
