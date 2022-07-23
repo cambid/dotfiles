@@ -1,4 +1,4 @@
-export NNTPSERVER="news.alphanet.ch"
+export NNTPSERVER="nnrp.alphanet.ch"
 export EDITOR="vim"
 
 export BSTINPUTS=/usr/share/texmf-dist/bibtex/bst//:$HOME/.texmf/bibtex//:.:
