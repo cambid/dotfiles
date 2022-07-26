@@ -20,6 +20,9 @@ bindsym $mod+Shift+Q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -modi run
 
+# start rofi for emojis
+bindsym $mod+Shift+e exec --no-startup-id rofimoji
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
