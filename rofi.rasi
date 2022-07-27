@@ -2,5 +2,6 @@ configuration {
 	font: "mono 28";
 	kb-row-tab: "";
 	kb-row-select: "Tab";
+	dpi: 120;
 }
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
