@@ -22,6 +22,7 @@ bindsym $mod+d exec rofi -show run -modi run
 
 # start rofi for emojis
 bindsym $mod+Shift+e exec --no-startup-id rofimoji
+bindsym $mod+c exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip" > /dev/null
 
 # change focus
 bindsym $mod+j focus left
