@@ -126,7 +126,7 @@ set list
 set shortmess=atI
 
 " use de and en for spellchecking
-set spelllang=de_de,en_us
+set spelllang=de_ch
 set spellfile=$HOME/.vim/de.add
 
 " check spelling in mails
