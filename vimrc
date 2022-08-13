@@ -251,4 +251,7 @@ nmap co =o
 let g:grammarous#languagetool_cmd = 'languagetool'
 let g:grammarous#use_vim_spelllang = 1
 
+" always show five lines above and below actual cursor
+set scrolloff=5
+
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
