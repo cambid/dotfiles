@@ -32,6 +32,7 @@ Plug 'pedrohdz/vim-yaml-folds'
 Plug 'tpope/vim-vinegar'
 Plug 'hashivim/vim-vagrant'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'rhysd/vim-grammarous'
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Initialize plugin system
 call plug#end()
@@ -246,5 +247,8 @@ nnoremap <leader>se :vsp $MYVIMRC<CR>
 
 " map co to =o for old unimpaired syntax
 nmap co =o
+
+let g:grammarous#languagetool_cmd = 'languagetool'
+let g:grammarous#use_vim_spelllang = 1
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
