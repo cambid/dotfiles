@@ -222,3 +222,7 @@ bindsym --release Super_L exec "pactl set-source-mute @DEFAULT_SOURCE@ on"
 
 # clipmenu
 bindsym $mod+p exec --no-startup-id CM_LAUNCHER=rofi clipmenu -i
+
+# autostart logseq and send it to scratchpad
+exec --no-startup-id logseq
+for_window [instance="logseq"] move scratchpad
