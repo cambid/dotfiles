@@ -255,3 +255,6 @@ let g:grammarous#use_vim_spelllang = 1
 set scrolloff=5
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" use unsigned and alpha for CTRL-A and CTRL-X too
+set nrformats=bin,octal,hex,unsigned,alpha
