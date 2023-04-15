@@ -207,6 +207,9 @@ bar {
   playerctl.layout="playerctl.song" \
   solaar.device="MX Ergo" \
   -t dracula-powerline
+  # disable scrolling through windows
+  bindsym button4 nop
+  bindsym button5 nop
 }
 
 smart_borders on
@@ -215,6 +218,10 @@ hide_edge_borders smart_no_gaps
 
 gaps inner 5
 gaps outer 0
+
+ # disable scrolling through windows
+bindsym button4 nop
+bindsym button5 nop
 
 # global push-to-talk
 bindsym Super_L exec "pactl set-source-mute @DEFAULT_SOURCE@ off"
