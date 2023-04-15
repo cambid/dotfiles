@@ -3,6 +3,7 @@ xrandr --dpi 220
 # personal colors and fonts
 [[ -f ~/.Xresources ]] && xrdb -merge -I"$HOME" ~/.Xresources
 # personal keymap
+setxkbmap eu
 setxkbmap -option shift:both_capslock
 setxkbmap -option caps:escape
 [[ -f ~/.xmodmaprc ]] && xmodmap ~/.xmodmaprc
