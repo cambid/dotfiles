@@ -127,5 +127,8 @@ unalias cp
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# create personal tmp dir
+mkdir -p /tmp/jf
+
 # use mcfly for history
 eval "$(mcfly init zsh)"
