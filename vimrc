@@ -248,6 +248,10 @@ nnoremap <leader>se :vsp $MYVIMRC<CR>
 " map co to =o for old unimpaired syntax
 nmap co =o
 
+" highlight trailing whitespace
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
+
 let g:grammarous#languagetool_cmd = 'languagetool'
 let g:grammarous#use_vim_spelllang = 1
 
