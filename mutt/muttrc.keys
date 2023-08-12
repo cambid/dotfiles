@@ -16,3 +16,9 @@ macro index,pager a "<limit>all\n" "show all messages (undo limit)"
 
 # bounce messages
 bind index,pager B resend-message
+
+# map CTRL-o to open html in browser
+macro index,pager \co "<view-attachments><search>html<enter><view-mailcap><exit>q" "Open html email in browser"
+
+# Do not wait for key input to continue
+set wait_key = false
