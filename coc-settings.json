@@ -1,0 +1,20 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
+    }
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": [
+      "**/playbooks/*.yml",
+      "**/playbooks/*.yaml",
+      "**/handlers/*.yml",
+      "**/handlers/*.yaml"
+    ]
+  }
+}

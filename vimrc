@@ -31,6 +31,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'tpope/vim-vinegar'
 Plug 'hashivim/vim-vagrant'
+Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'rhysd/vim-grammarous'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -61,6 +62,21 @@ let g:airline_theme = "jellybeans"
 let g:mkdp_auto_close = 0
 
 filetype on
+
+let g:coc_filetype_map = {
+\		'yaml.ansible': 'ansible',
+\	}
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['autopep8'],
+\   'sh': ['shfmt'],
+\   'go': ['gofmt'],
+\   'json': ["jq"],
+\   'xml': ["xmllint"],
+\   'yaml.ansible': ['ansible-lint'],
+\   'js': ['eslint']
+\ }
 
 " automatic reloading of vimrc
 autocmd! bufwritepost .vimrc source %
@@ -259,6 +275,8 @@ let g:grammarous#use_vim_spelllang = 1
 set scrolloff=5
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+nmap <silent> ga <Plug>(coc-codeaction-line)
 
 " use unsigned and alpha for CTRL-A and CTRL-X too
 set nrformats=bin,octal,hex,unsigned,alpha
