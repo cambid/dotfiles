@@ -1,0 +1,23 @@
+import = ["/home/jfader/DEVELOPMENT/gits/cambid/dotfiles/alacritty/dracula.toml"]
+
+[font]
+size = 9
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[hints]
+alphabet = "jfkdls;ahgurieowpq"
+
+[[hints.enabled]]
+command = "xdg-open"
+post_processing = true
+regex = "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\" {-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "X"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Control"
