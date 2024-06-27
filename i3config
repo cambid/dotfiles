@@ -191,23 +191,23 @@ bar {
   id 2
   status_command bumblebee-status \
   -m \
-  playerctl \
   load \
   memory \
   disk \
   nic \
   battery \
   solaar \
-  sensors \
+  sensors2  \
   pasink \
   pasource \
   datetime \
   -p \
   nic.states=^down \
+  sensors2.showtemp=false \
   datetime.format="%a %d %b %H:%M:%S" \
-  playerctl.layout="playerctl.song" \
   solaar.device="MX Ergo" \
   -t dracula-powerline
+  bindsym button1 no
   # disable scrolling through windows
   bindsym button4 nop
   bindsym button5 nop
