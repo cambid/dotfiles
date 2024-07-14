@@ -202,9 +202,13 @@ bar {
   pasource \
   datetime \
   -p \
+  memory.format='{percent:05.02f}%' \
+  disk.format='{percent:05.02f}%' \
   nic.states=^down \
+  nic.exclude='lo,virbr,docker,vboxnet,veth,br,.*:avahi,wg0' \
+  nic.format='{intf} {ip} {ssid} {strength}' \
   sensors2.showtemp=false \
-  datetime.format="%a %d %b %H:%M:%S" \
+  datetime.format="%a %Y-%m-%d %H:%M:%S" \
   solaar.device="MX Ergo" \
   -t dracula-powerline
   bindsym button1 no
