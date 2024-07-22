@@ -188,6 +188,7 @@ for_window [title="Microsoft Teams Notification" class="Microsoft Teams - Previe
 no_focus [title="Microsoft Teams Notification"]
 
 bar {
+  font pango:FontAwesome, DejaVu Sans Mono 8
   id 2
   status_command bumblebee-status \
   -m \
