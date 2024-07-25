@@ -82,7 +82,7 @@ set ascii_chars
 
 # Title des X-Term konfigurieren #JFE
 set xterm_set_titles=yes
-set xterm_title="--[%f]--[%n/%m]---(Sortiert nach %s/%S)%>-"
+set xterm_title="--[%f]--[%n/%m]---(Sortiert nach %s/%S)--"
 
 # Tilde am Ende der Nachricht
 set tilde
