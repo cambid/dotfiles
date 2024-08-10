@@ -54,7 +54,7 @@ set include
 # Header-Cache
 set header_cache="$HOME/.mutt/cache"
 
-set editor='vim -c "set tw=75"'
+set editor='nvim -c "set tw=75"'
 
 mailboxes +INBOX +INBOX.SPAM +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux  +INBOX.Piratenpartei +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Drafts
 
