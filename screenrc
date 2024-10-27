@@ -1,0 +1,21 @@
+eind E source /home/jfader/.screen/startup
+hardstatus alwayslastline "%=%?%-w%?[%n%f %t]%?%+w%? %c "
+startup_message off
+autodetach on
+defscrollback 100000
+term screen-256color
+
+caption always
+caption string "%{kg}%-w%{wb}|%n %t|%{-}%+w"
+
+# Shift und Left/Right für das nexte bzw. vorherige Fenster (ueberprueft
+# mittels "cat -")
+bindkey "^[[1;2c" next
+bindkey "^[[1;2d" prev
+bindkey "^[[1;2C" next
+bindkey "^[[1;2D" prev
+
+# Scrollen mit Normaler Tastenkombination
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
