@@ -14,7 +14,7 @@ xset b off
 # no screensaver
 xset s off
 # setting background
-feh --bg-scale ~/.backgrounds/active
+feh --bg-scale --randomize ~/.backgrounds/
 # starting helper programs
 CM_SYNC_PRIMARY_TO_CLIPBOARD=1 clipmenud &
 solaar --tray &
