@@ -99,7 +99,7 @@ set relativenumber
 set number
 
 " show linechanges with $
-set cpoptions=$
+set cpoptions+=$
 
 " show commands in the lower right corner
 set showcmd
