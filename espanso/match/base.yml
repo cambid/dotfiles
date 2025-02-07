@@ -3,6 +3,12 @@ matches:
   - trigger: ":llg"
     replace: "Liebe Grüsse\n\nJan"
 
+  - trigger: ":ffg"
+    replace: |
+             $|$
+             Freundliche Grüsse
+             Jan Fader
+
   - triggers: ["Ustü","ustü","UStü"]
     replace: "Unterstützung"
 
