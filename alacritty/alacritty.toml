@@ -1,4 +1,3 @@
-import = ["/home/jfader/DEVELOPMENT/gits/cambid/dotfiles/alacritty/dracula.toml"]
 
 [font]
 size = 9
@@ -21,3 +20,6 @@ mods = "Control|Shift"
 [hints.enabled.mouse]
 enabled = true
 mods = "Control"
+
+[general]
+import = ["/home/jfader/DEVELOPMENT/gits/cambid/dotfiles/alacritty/dracula.toml"]

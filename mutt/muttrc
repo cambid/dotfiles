@@ -19,7 +19,7 @@ unignore Date Subject From To CC BCC Resent-From X-Spam-Status User-Agent X-Mail
 # Sortiert die Header immer gleich
 hdr_order Resent-From From To CC Subject BCC Date X-Spam-Status User-Agent X-Mailer
 folder-hook 'INBOX' set imap_headers="X-SPAM-STATUS"
-folder-hook 'SPAM' set imap_headers="X-SPAM-STATUS"
+folder-hook 'Junk' set imap_headers="X-SPAM-STATUS"
 
 # Schaltet Verschieben von gelesenen Mails aus
 set move=no
@@ -56,7 +56,7 @@ set header_cache="$HOME/.mutt/cache"
 
 set editor='nvim -c "set tw=75"'
 
-mailboxes +INBOX +INBOX.SPAM +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux  +INBOX.Piratenpartei +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Drafts
+mailboxes +INBOX +INBOX.Junk +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux  +INBOX.Piratenpartei +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Drafts
 
 set index_format="%4C %Z %4N     %d [%?H?%5H&     ?] {%3M} %-35.35F (%5c) %s "
 set date_format="!%a %d. %b. %Y"
@@ -64,7 +64,7 @@ set to_chars=" +TCFL"
 
 # In allen Ordnern ausser dem SPAM-Ordner nach Faden sortieren. Im SPAM-Ordner nach spamwert und im VersendeteNachrichten-Ordner nach Datum sortieren
 folder-hook .       set sort="threads"
-folder-hook 'SPAM'  set sort="spam"
+folder-hook 'Junk'  set sort="spam"
 folder-hook 'VersendeteNachrichten' set sort="date"
 
 # Im VersendeteNachrichten-Ordner nach To und Subject suchen

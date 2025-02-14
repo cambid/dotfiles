@@ -1,1 +1,3 @@
-/home/jfader/.config/rofimoji.rc
+action = copy
+files = [emojis, chess_symbols, gitmoji]
+skin-tone = light

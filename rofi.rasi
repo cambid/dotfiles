@@ -1,6 +1,7 @@
 configuration {
 	font: "mono 28";
 	kb-row-tab: "";
+	kb-element-next: "";
 	kb-row-select: "Tab";
 	dpi: 120;
 }
