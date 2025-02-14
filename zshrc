@@ -78,6 +78,7 @@ plugins=(
   vagrant
   alias-tips
   z
+  opentofu
 )
 
 source $ZSH/oh-my-zsh.sh

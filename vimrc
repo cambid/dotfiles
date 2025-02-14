@@ -35,6 +35,7 @@ Plug 'yaegassy/coc-ansible', {'do': 'yarn install --frozen-lockfile'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'rhysd/vim-grammarous'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'hashivim/vim-terraform'
 " Initialize plugin system
 call plug#end()
 
