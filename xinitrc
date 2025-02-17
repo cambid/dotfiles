@@ -26,6 +26,7 @@ dunst --startup_notification &
 xinput set-prop --type=float "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 1.0
 xinput set-prop --type=float "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 1.0
 xinput --set-prop "pointer:Logitech MX Ergo" "libinput Accel Speed" 1.0
+xinput --set-prop "pointer:Logitech USB Receiver Mouse" "libinput Accel Speed" 1.0
 ~/bin/xinput-toggle -r "SynPS"
 eval "$(ssh-agent)"
 nextcloud &
