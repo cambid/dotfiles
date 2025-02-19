@@ -1,5 +1,5 @@
 export NNTPSERVER="nnrp.alphanet.ch"
-export EDITOR="vim"
+export EDITOR="nvim"
 
 export BSTINPUTS=/usr/share/texmf-dist/bibtex/bst//:$HOME/.texmf/bibtex//:.:
 export TEXINPUTS=/home/jfader/.texmf-fader/tex//:.:
