@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://creativeprojects.github.io/resticprofile/jsonschema/config-1.json
+---
+
+version: '1'
+
+default:
+  repository: 'sftp:u453104.your-storagebox.de:/home/restic/fader-archlinux-P1'
+  initialize: true
+  env:
+    RESTIC_PASSWORD_FILE: /home/jfader/.restic_password
+  backup:
+    source:
+      - /home/jfader
+      - /mnt/DATEN
+    exclude:
+      - /home/jfader/Nextcloud/Akkumulator
+      - /mnt/DATEN/VMs
+      - /mnt/DATEN/.vagrant.d/boxes
+      - /mnt/DATEN/.vagrant.d/cache
+      - /home/jfader/.cache/yay
+      - /home/jfader/.cache/restic
+      - /mnt/DATEN/movies
+    verbose: 1
+    schedule: "*-*-* 12:00:00"
+    schedule-permission: user
+    schedule-log: "/var/log/resticprofile/backup.log"
+    run-after: '~jfader/bin/resticprofile-send-success.sh backup@faderweb.de'
+    run-after-fail: '~jfader/bin/resticprofile-send-error.sh backup@faderweb.de'
+  retention:
+    before-backup: false
+    after-backup: true
+    keep-daily: 7
+    keep-weekly: 4
+    keep-monthly: 12
+    keep-yearly: 3
+    prune: true
+    forget: true
