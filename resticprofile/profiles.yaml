@@ -21,7 +21,9 @@ default:
       - /home/jfader/.cache/restic
       - /mnt/DATEN/movies
     verbose: 1
-    schedule: "*-*-* 12:00:00"
+    schedule:
+      - "*-*-* 12:00:00"
+      - daily
     schedule-permission: user
     schedule-log: "/var/log/resticprofile/backup.log"
     run-after: '~jfader/bin/resticprofile-send-success.sh backup@faderweb.de'
