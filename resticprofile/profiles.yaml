@@ -26,6 +26,9 @@ default:
       - daily
     schedule-permission: user
     schedule-log: "/var/log/resticprofile/backup.log"
+    schedule-ignore-on-battery: true
+    schedule-lock-wait: 1h
+    schedule-lock-mode: default
     run-after: '~jfader/bin/resticprofile-send-success.sh backup@faderweb.de'
     run-after-fail: '~jfader/bin/resticprofile-send-error.sh backup@faderweb.de'
   retention:
