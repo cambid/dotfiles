@@ -62,14 +62,12 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  k
   archlinux
   zsh-autosuggestions
   zsh-syntax-highlighting
   common-aliases
   docker
   git
-  history
   history-substring-search
   last-working-dir
   ssh-agent
@@ -79,6 +77,7 @@ plugins=(
   alias-tips
   z
   opentofu
+  zsh-fzf-history-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -130,6 +129,3 @@ unalias cp
 
 # create personal tmp dir
 mkdir -p /tmp/jf
-
-# use mcfly for history
-eval "$(mcfly init zsh)"
