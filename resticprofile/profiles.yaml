@@ -8,7 +8,9 @@ synology:
   initialize: true
   env:
     RESTIC_PASSWORD_FILE: /home/jfader/.restic_password-synology
-  run-before: wol 00:11:32:30:ae:81 && sleep 300 && mount /mnt/synology/backup
+  run-before:
+    - sudo etherwake 00:11:32:30:ae:81 -i wlp0s20f3
+    - sleep 300 && mount /mnt/synology/backup
   run-after: umount /mnt/synology/backup
   backup:
     source:
