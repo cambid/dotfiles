@@ -22,3 +22,6 @@ macro index,pager \co "<view-attachments><search>html<enter><view-mailcap><exit>
 
 # Do not wait for key input to continue
 set wait_key = false
+
+# go into directories with g
+bind browser g descend-directory
