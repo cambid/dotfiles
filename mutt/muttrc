@@ -15,9 +15,9 @@ source $HOME/.mutt/muttrc.spam
 source $HOME/.mutt/dracula/dracula.muttrc
 
 # Schaltet das Ignorieren der wichtigen Header aus
-unignore Date Subject From To CC BCC Resent-From X-Spam-Status User-Agent X-Mailer
+unignore Date Subject From To CC BCC Resent-From X-Spam-Status User-Agent X-Mailer X-Clacks-Overhead
 # Sortiert die Header immer gleich
-hdr_order Resent-From From To CC Subject BCC Date X-Spam-Status User-Agent X-Mailer
+hdr_order Resent-From From To CC Subject BCC Date X-Spam-Status X-Clacks-Overhead User-Agent X-Mailer
 folder-hook 'INBOX' set imap_headers="X-SPAM-STATUS"
 folder-hook 'Junk' set imap_headers="X-SPAM-STATUS"
 

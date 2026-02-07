@@ -2,3 +2,5 @@
 my_hdr X-GPG-Key: gpg --recv-keys --keyserver wwwkeys.pgp.net ED7834905CAF79644D5685011A6BDEFB0E27FA44
 # Born to frag!
 my_hdr X-Editor:`nvim --version | grep "NVIM" | sed 's/ (.*)//g'`
+# remember him
+my_hdr X-Clacks-Overhead: GNU Terry Pratchett

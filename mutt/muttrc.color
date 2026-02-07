@@ -17,6 +17,7 @@ color   header          brightmagenta   default   "^(User-Agent|X-Mailer):"
 color   header          red             default   "^BCC:"
 color   header          brightgreen     default   "^Resent-From"
 color   header          brightred       default   "^X-SpamTest"
+color   header          brightred       default   "^X-Clacks-Overhead"
 color   hdrdefault      brightblack     default
 
 # Der "Leuchtbalken"
