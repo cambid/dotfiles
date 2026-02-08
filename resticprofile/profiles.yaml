@@ -10,7 +10,7 @@ synology:
     RESTIC_PASSWORD_FILE: /home/jfader/.restic_password-synology
   run-before:
     - sudo etherwake 00:11:32:30:ae:81 -i wlp0s20f3
-    - sudo etherwake 00:11:32:30:ae:81 -i enp44s0u2u3
+    - sudo etherwake 00:11:32:30:ae:81 -i enp44s0u2u3 || true
     - sleep 300 && mount /mnt/synology/backup
   run-after: umount /mnt/synology/backup
   backup:
