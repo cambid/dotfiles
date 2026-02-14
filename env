@@ -28,3 +28,5 @@ fi
 
 export TERM=xterm-256color
 export TERRAFORM_PATH=tofu
+
+export MOZ_USE_XINPUT2=1
