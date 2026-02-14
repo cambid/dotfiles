@@ -4,13 +4,13 @@
 version: '1'
 
 synology:
-  repository: 'local:/mnt/synology/backup/fader-archlinux-P1'
+  repository: 'local:/mnt/synology/backup/fader-archlinux-T14s'
   initialize: true
   env:
     RESTIC_PASSWORD_FILE: /home/jfader/.restic_password-synology
   run-before:
-    - sudo etherwake 00:11:32:30:ae:81 -i wlp0s20f3
-    - sudo etherwake 00:11:32:30:ae:81 -i enp44s0u2u3 || true
+    - sudo etherwake 00:11:32:30:ae:81 -i wlp194s0
+    - sudo etherwake 00:11:32:30:ae:81 -i enp197s0f3u1 || true
     - sleep 300 && mount /mnt/synology/backup
   run-after: umount /mnt/synology/backup
   backup:
@@ -58,7 +58,7 @@ synology:
     run-after-fail: '~jfader/bin/resticprofile-send-error.sh backup@faderweb.de'
 
 hetzner:
-  repository: 'sftp:u453104.your-storagebox.de:/home/restic/fader-archlinux-P1'
+  repository: 'sftp:u453104.your-storagebox.de:/home/restic/fader-archlinux-T14s'
   initialize: true
   env:
     RESTIC_PASSWORD_FILE: /home/jfader/.restic_password-hetzner
