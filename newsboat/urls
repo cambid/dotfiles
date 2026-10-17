@@ -2,7 +2,6 @@ http://lxer.com/module/newswire/headlines.rss
 http://www.kernelpodcast.org/feed/
 http://meiert.com/de/publications/publications.xml
 http://osnews.com/files/recent.rdf
-http://sourceforge.net/export/rss2_projnews.php?group_id=86651&rss_fulltext=1
 http://www.bildblog.de/wp-rss2.php
 http://www.designtagebuch.de/feed/
 http://www.gnu.org/rss/whatsnew.rss
@@ -10,20 +9,15 @@ https://rss.golem.de/rss.php?feed=RSS2.0
 https://www.heise.de/newsticker/heise-atom.xml
 https://www.heise.de/security/rss/news.rdf security
 http://www.linux-community.de/Ticker/news.rdf
-http://feeds.feedburner.com/LinuxMagazine?format=xml
 http://www.pro-linux.de/backend/Applications.rdf
 http://www.pro-linux.de/backend/pro-linux.rdf?
 https://strcat.de/blog/index.rss
-http://blog.oncode.info/feed/
-http://feeds.feedburner.com/debiansystemadmin?format=xml
 http://www.archlinux.org/feeds/news/
 http://torvalds-family.blogspot.com/feeds/posts/default
 http://xkcd.com/rss.xml
 http://feeds2.feedburner.com/icinga-org?format=xml
-http://www.daujones.com/daubeitraege.rss
 http://www.krolop-gerst.com/blog/feed/
 http://hugendubelverdi.blogspot.com/feeds/posts/default
-https://blog.delouw.ch/feed/
 http://feeds.feedburner.com/stadt-bremerhaven/dqXM?format=xml
 http://www.blogwiese.ch/feed/
 http://teacheritblog.wordpress.com/feed/
@@ -32,24 +26,16 @@ http://www.androidmag.de/feed/
 http://feeds.feedburner.com/cyonblog
 http://yakking.branchable.com/blog/index.atom
 http://feeds.feedburner.com/technikblog_ch?format=xml
-https://www.bpm.ch/rss/news.xml
-http://blog.dragonsoft.us/feed/
 http://www.heinlein-support.de/blog/feed/
-https://securityblog.switch.ch/feed/ security
 https://isc.sans.edu/rssfeed.xml
 https://www.steigerlegal.ch/feed/
-https://feeds.feedburner.com/neuerdings1
 https://shopbetreiber-blog.de/rss.xml
-https://adfinis.com/feed/
 https://digitalcouple.wordpress.com/feed/
 http://www.linux-magazin.de/rss/feed/news
-https://www.ansible.com/blog/rss.xml
 http://bestatterweblog.de/feed/
 https://www.brettspiel-angebote.de/feed/
 https://www.kuketz-blog.de/category/artikel/feed/
 https://kinderdoc.wordpress.com/feed/
-https://www.intersystems.com/feed/?post_type=support-alert security
-https://www.thomas-krenn.com/de/tkmag/feed/
 https://tobru.ch/rss/
 https://www.unixe.de/feed/
 https://pascoda.fairydust.space/feed/ chaos
@@ -63,14 +49,11 @@ https://zerforschung.org/index.xml chaos security
 https://vowe.net/feed/
 https://www.sparkojote.ch/feed/ finance
 https://wid.cert-bund.de/content/public/securityAdvisory/rss
-https://hazardous.org/feed/main.xml
 https://nureinblog.at/feed
 https://linuxundich.de/feed/ linux
-https://notebook.cosima-laube.de/feed/
 https://berthe.uber.space/?feed=rss2
 https://netzpolitik.org/feed/
 https://www.my-it-brain.de/wordpress/feed/
-https://www.volexity.com/blog/feed security
 https://leah.is/index.xml
 https://leah.is/notes/index.xml
 https://forum.boardgamearena.com//feed.php?mode=news
@@ -78,7 +61,6 @@ https://about.gitlab.com/security-releases.xml security
 https://about.gitlab.com/all-releases.xml security
 https://curius.de/feed/
 https://zeitgewinn-hamburg.de/feed/
-https://zenhabits.net/feed/
 https://netz-rettung-recht.de/feeds/index.rss2
 https://www.impactmatters.ch/feed/ agile
 https://www.judithandresen.com/rss/blog agile
@@ -89,10 +71,9 @@ https://www.kagel.ch/feed/
 https://agilereflection.org/feed/ agile
 https://www.netnea.com/cms/feed/
 https://coreruleset.org/index.xml
-http://www.daemonology.net/hn-daily/
+https://www.daemonology.net/hn-daily/index.rss
 https://linux-bildung.at/feed/
-https://deprogrammaticaipsum.com/rss
-https://ticker-api.systemli.org/v1/feed?origin=luetziticker22.aktionsticker.org&format=rss
+https://deprogrammaticaipsum.com/index.xml
 https://www.lean-agility.de/feeds/posts/default?alt=rss
 https://projekte-leicht-gemacht.de/blog/feed/
 https://blog.uberspace.de/rss/
@@ -107,25 +88,23 @@ https://svij.org/blog/index.xml
 https://kill-the-newsletter.com/feeds/ffqz0ak9ypsz1y2i.xml
 https://www.renemoser.net/blog/index.xml
 https://blog.sandra-parsick.de/index.xml
-https://nerdbude.com/rss/rss.xml
-$ttps://buttondown.email/o11y.news/rss
+https://www.nerdbude.com/index.xml
+https://buttondown.email/o11y.news/rss
 https://blog.koehntopp.info/feed.xml
 https://workchronicles.com/feed/
 https://allesnurgecloud.com/feed/
 https://www.teamelephant.de/feed/
-https://buttondown.email/opsindev.news/rss
 https://norberteder.com/feed/
 https://sandraschink.de/feed/
 https://marcel-waldvogel.ch/feed/
 https://anna-livia.de/feed/
 https://uhl-steine-scherben.org/blog/index.xml
 https://akos.ma/index.xml
-https://blog.bespinian.io/index.xml
+https://bespinian.io/rss.xml
 https://taylor.town/feed.xml
 https://k-p.ch/kategorie/blog/feed/
 https://ute-hauth.de/feed/
 https://www.ehmers-blog.de/feed/
-https://sofasophia.blogda.ch/feed/
 https://www.inside-it.ch/rss.xml
 https://www.bpm.ch/rss/blogs.xml
 https://jpmens.net/atom.xml
