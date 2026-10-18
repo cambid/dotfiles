@@ -6,8 +6,10 @@ max-items 0
 notify-screen yes
 notify-xterm yes
 refresh-on-startup yes
-keep-articles-days 365
+keep-articles-days 1460
 error-log ~/.newsboat/error.log
+
+goto-next-feed no
 
 color background   green   black
 color listnormal   white   black
