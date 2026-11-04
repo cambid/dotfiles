@@ -56,7 +56,7 @@ set header_cache="$HOME/.mutt/cache"
 
 set editor='nvim -c "set tw=75"'
 
-mailboxes +INBOX +INBOX.Junk +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.slrn +INBOX.Mailinglisten.latex +INBOX.Mailinglisten.archlinux  +INBOX.Piratenpartei +INBOX.Piratenpartei.BW +INBOX.Piratenpartei.Lörrach +INBOX.Piratenpartei.BW-announce +INBOX.Piratenpartei.BZV-FR +INBOX.Drafts
+mailboxes +INBOX +INBOX.Junk +INBOX.Mailinglisten +INBOX.Mailinglisten.tur +INBOX.Mailinglisten.archlinux +INBOX.Drafts
 
 set index_format="%4C %Z %4N     %d [%?H?%5H&     ?] {%3M} %-35.35F (%5c) %s "
 set date_format="!%a %d. %b. %Y"
