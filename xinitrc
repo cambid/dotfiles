@@ -34,5 +34,6 @@ flameshot &
 nm-applet &
 keepassxc &
 ssh-add
+source .env
 # starting window manager
 exec i3
